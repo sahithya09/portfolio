@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myFolio">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body ng-controller="MainController">
+
+  
+    <div ng-include src='"templates/navbar.html"'></div>
+    <div ui-view>
+    	
+    </div>
+	
+	<div ng-include src='"templates/social.html"'></div>
+	<div ng-include src='"templates/footer.html"'></div>
+
+	
+
+
+    <!-- Bootstrap core JavaScript -->
+
+    <script src="js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+     <script src="js/app.js"></script>
+  </body>
+</html>
